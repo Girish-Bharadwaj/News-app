@@ -11,18 +11,18 @@ Used  [Architecture components](https://developer.android.com/topic/libraries/ar
 - [Glide](https://github.com/bumptech/glide) to load image from URL
 -
 
-### Screen shots
+## Screen shots
 
-##### Light mode
-![Image](/Screenshots/L1.jpg)
-![Image](/Screenshots/L2.jpg)
+###Light mode
+![Image](/Screenshots/L1.jpg) 
+![Image](/Screenshots/L2.jpg) 
 ![Image](/Screenshots/L3.jpg)
 
 ##### Dark mode
 
-![Image](/Screenshots/L1.jpg)
-![Image](/Screenshots/L2.jpg)
-![Image](/Screenshots/L3.jpg)
+![Image](/Screenshots/D1.jpg)
+![Image](/Screenshots/D2.jpg)
+![Image](/Screenshots/D3.jpg)
 
 ##### Web view of each news
 
