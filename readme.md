@@ -14,7 +14,9 @@ Used  [Architecture components](https://developer.android.com/topic/libraries/ar
 ## Screen shots
 
 ### Light mode
-<img src="/Screenshots" alt="Lighmode" width="250"/>
+![Image](/Screenshots/L1.jpg)
+![Image](/Screenshots/L2.jpg)
+![Image](/Screenshots/L3.jpg)
 
 ### Dark mode
 
