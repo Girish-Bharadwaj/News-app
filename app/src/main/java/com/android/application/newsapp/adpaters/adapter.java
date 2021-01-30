@@ -2,6 +2,7 @@ package com.android.application.newsapp.adpaters;
 
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +28,7 @@ onItemClicked onItemClicked;
     public void setArticlesList(List<articles> articlesList) {
         this.articlesList = articlesList;
         notifyDataSetChanged();
+        Log.d("IRONMAN","Notified data changes");
 }
 
     @NonNull
@@ -49,8 +51,11 @@ onItemClicked onItemClicked;
             holder.author.setText(articlesList.get(position).getAuthor());
             holder.description.setText(articlesList.get(position).getDescription());
             holder.title.setText(articlesList.get(position).getTitle());
-            Glide.with(context).load(articlesList.get(position).getUrlToImage())
-                    .centerCrop().into(holder.imageView);
+            String imageUrl=articlesList.get(position).getUrlToImage();
+            if(imageUrl==null){}else {
+                Glide.with(context).load(imageUrl)
+                        .centerCrop().into(holder.imageView);
+            }
         }
     }
 

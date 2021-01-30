@@ -16,14 +16,17 @@ public class MainActivity extends AppCompatActivity {
     MainViewModel viewModel;
     final String CONST="position";
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bottomNavigationView=findViewById(R.id.bottom);
+        bottomNavigationView=findViewById(R.id.menu);
         NavHostFragment navHostFragment= (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.fragment);
         NavController navController=navHostFragment.getNavController();
         NavigationUI.setupWithNavController(bottomNavigationView,navController);
+
     }
 
 }

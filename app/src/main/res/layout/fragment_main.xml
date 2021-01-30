@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:elevation="150dp"
+        app:cardElevation="15dp"
         app:cardCornerRadius="50dp"
         app:layout_constraintTop_toTopOf="parent"
         >
@@ -24,7 +24,7 @@
             android:textAlignment="center"
             app:iconifiedByDefault="false"
             app:queryBackground="@null"
-            app:queryHint="Search by category like sports,business etc" />
+            app:queryHint="Search news world wide" />
     </androidx.cardview.widget.CardView>
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:layout_width="match_parent"

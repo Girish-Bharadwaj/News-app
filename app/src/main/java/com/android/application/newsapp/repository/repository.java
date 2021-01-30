@@ -17,7 +17,7 @@ import retrofit2.Retrofit;
 public class repository {
     final String API_KEY = "09cddace147644b38c5c5e161b2f0189";
     MutableLiveData<news> newsLiveData= new MutableLiveData<>();
-    MutableLiveData<news> newHeadlines=new MutableLiveData<>();
+    MutableLiveData<news> newHeadlinesCategory=new MutableLiveData<>();
     newsApi newsApi;
     Application application;
     //Constructor for passing application and creating instance of retrofit
@@ -51,8 +51,9 @@ public class repository {
        });
        return newsLiveData;
   }
-    public MutableLiveData<news> getHeadlines(){
-       Call<news> newsCall = newsApi.fetchNews("in",50, API_KEY);
+
+    public MutableLiveData<news> getHeadlinesCategory(String category){
+       Call<news> newsCall = newsApi.fetchCategoryNews("in",category,50, API_KEY);
         newsCall.enqueue(new Callback<news>() {
             @Override
             public void onResponse(Call<news> call, Response<news> response) {
@@ -61,7 +62,7 @@ public class repository {
                     return;
                 }
                 news news=response.body();
-                newHeadlines.postValue(news);
+                newHeadlinesCategory.postValue(news);
 
             }
             @Override
@@ -69,7 +70,7 @@ public class repository {
                 Toast.makeText(application,""+t.getMessage(),Toast.LENGTH_LONG).show();
             }
         });
-        return newHeadlines;
+        return newHeadlinesCategory;
     }
 
 }

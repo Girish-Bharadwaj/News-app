@@ -15,13 +15,12 @@ public class HeadlinesViewModel extends AndroidViewModel {
     public HeadlinesViewModel(@NonNull Application application) {
         super(application);
         repository=new repository(application);
-        newsHeadlines=repository.getHeadlines();
     }
 
     public LiveData<news> getNewsHeadlines() {
         return newsHeadlines;
     }
-    public void refresh(){
-        newsHeadlines=repository.getHeadlines();
+    public void refresh(String category){
+        newsHeadlines=repository.getHeadlinesCategory(category);
     }
 }
