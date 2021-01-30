@@ -13,7 +13,7 @@ Used  [Architecture components](https://developer.android.com/topic/libraries/ar
 
 ## Screen shots
 
-###Light mode
+### Light mode
 ![Image](/Screenshots/L1.jpg) 
 ![Image](/Screenshots/L2.jpg) 
 ![Image](/Screenshots/L3.jpg)
