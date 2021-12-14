@@ -1,5 +1,3 @@
-Welcome file
-Welcome file
 # MVVM News app 
 
 An app based on mvvm architecture made using android jetpack libraries.
